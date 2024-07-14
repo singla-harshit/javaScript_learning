@@ -19,5 +19,22 @@ const user = {
 //     console.log(this.username);
 // }
 
+// const chai = () => {
+//     const username = 'Harshit'
+//     console.log(this.username);
+// }
+// chai()
 
-chai()
+// const addTwo = (a,b) => a+b
+
+// const addTwo = (a,b) => {
+//     return a+b
+// }
+
+// When using curly bracket we have oto use the return keyword but can be avoided using parenthesis
+// const addTwo = (a,b) => (a+b)
+
+// e.g. when returning a object 
+
+const addTwo = (a,b) => ({username : "Harshit"})
+console.log(addTwo(3,4))
