@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Urbanist';
+        }
+        body{
+            background-color: rgb(240, 240, 240);
+        }
+        .navbar{
+            display: flex;
+            background-color: grey;
+            color: white;
+            border-bottom: 3px solid black;
+            justify-content: space-between;
+        }
+        h1{
+            padding: 20px;
+            text-shadow: 2px 2px 0 black;
+        }
+        .navbar ul{
+            display: flex;
+            gap:40px; 
+            margin-right: 60px;
+            padding-top: 20px;
+        }
+        .navbar li{
+            list-style-type: none;
+            font-size: 1.7rem;
+            text-shadow: 2px 2px 0 black;
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+        }
+        .Projects{
+            margin-top: 50px;
+            text-align: center;
+        }
+        .Projects a{
+            text-decoration: none;
+            font-size: 2rem;
+            border: 2px solid rgb(83, 82, 82);
+            color: rgb(52, 30, 23);
+            background-color: grey;
+            padding: 5px 20px;
+            border-radius: 10px;   
+        }
+        .Projects>ul{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .Projects a:hover{
+            background-color: orange;
+            border-color: brown;
+            padding: 10px 30px;
+            transition: 0.25s;
+        }
+        </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Small Javascript Projects</h1>
+        <ul>
+            <li><a href="./outerindex.html">Home</a></li>
+            <li><a href="">Code</a></li>
+        </ul>
+    </div>
+    <div class="Projects">
+        <ul>
+            <li><a href="./Color_Changer/index.html" target="_blank">Color Changer</a></li>
+            <li><a href="./BMI Calc/index.html" target="_blank">BMI Calculator</a></li>
+            <li><a href="./Digital_Clock/index.html"target="_blank">Digital Clock</a></li>
+            <li><a href="./Guess The Number/index.html"target="_blank">Guess The Number</a></li>
+        </ul>
+    </div>
+</body>
+</html>

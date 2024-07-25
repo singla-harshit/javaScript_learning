@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Urbanist';
+        }
+        body{
+            background-color: rgb(147, 145, 144);
+        }
+        .navbar{
+            display: flex;
+            background-color: rgb(43, 42, 42);
+            color: white;
+            border: 3px solid rgb(255, 253, 253);
+            justify-content: space-between;
+        }
+        h1{
+            padding: 20px;
+            /* text-shadow: 2px 2px 0 black; */
+            background-clip:text ;
+            -webkit-text-fill-color: transparent;
+            background-image: url(./img/images.jpeg);
+        }
+        .navbar ul{
+            display: flex;
+            gap:40px; 
+            margin-right: 60px;
+            padding-top: 20px;
+        }
+        .navbar li{
+            list-style-type: none;
+            font-size: 1.7rem;
+        }
+        .navbar a{
+            color: gray;
+            text-decoration: none;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: url(./img/images.jpeg);
+        }
+        .main{
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .main h2{
+            /* text-align: center; */
+            font-size: 1.8rem;
+        }
+        .colors{
+            margin-top: 30px;
+            display: flex;
+            gap: 10px;
+        }
+        .colors div{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+        }
+
+    </style>
+
+<script src="script.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Color Changing</h1>
+        <ul>
+            <li><a href="../outerindex.html">Home</a></li>
+            <li><a href="">Code</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <h2>Choose Your Color</h2>
+        <div class="colors">
+            <div style="background-color: white;" class="button" id="white"></div>
+            <div style="background-color: red;" class="button" id="red"></div>
+            <div style="background-color: blue;" class="button" id="blue"></div>
+            <div style="background-color: black;" class="button" id="black"></div>
+        </div>
+    </div>
+</body>
+</html>
