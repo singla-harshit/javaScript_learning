@@ -14,5 +14,6 @@ let age=18
 
 // object - 
 
-console.log(typeof null)    // Object
-console.log(typeof undefined)   // Undefined
+// console.log(typeof null)    // Object
+// console.log(typeof undefined)   // Undefined
+// console.log("hello"=="World");
