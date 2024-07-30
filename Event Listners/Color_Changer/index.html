@@ -68,6 +68,16 @@
       }
       .button {
         border-radius: 10px;
+        display: grid;
+        align-items: center;
+      }
+      button{
+        background-color: transparent;
+        border: 0;
+        padding: 60px 10px;
+      }
+      #black>button{
+        color: whitesmoke;
       }
     </style>
 
@@ -83,12 +93,12 @@
     </div>
 
     <div class="main">
-      <h2>Choose Your Color</h2>
+      <h2 id="heading">Choose Your Color</h2>
       <div class="colors">
-        <div style="background-color: white" class="button" id="white"></div>
-        <div style="background-color: red" class="button" id="red"></div>
-        <div style="background-color: blue" class="button" id="blue"></div>
-        <div style="background-color: black" class="button" id="black"></div>
+        <div style="background-color: white" class="button" id="white"><button ondblclick="alert('You Double Clicked White')">DblClick The Button</button></div>
+        <div style="background-color: red" class="button" id="red"><button  onclick="alert('You clicked Red')">Click The Button</button></div>
+        <div style="background-color: blue" class="button" id="blue"><button>Enter The Button</button></div>
+        <div style="background-color: black" class="button" id="black"><button>Enter The Button</button></div>
       </div>
     </div>
   </body>
