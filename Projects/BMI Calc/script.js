@@ -3,7 +3,7 @@ let button = document.getElementById('btn')
 button.addEventListener('click',function(){
     const weight = document.querySelector('#weight').value
     const height = document.querySelector('#height').value
-    const BMI = weight/(height*height)
+    const BMI = (weight/(height*height)).toFixed(2)
     console.log(weight,height,BMI);
     const result = document.querySelector('#result')
     
