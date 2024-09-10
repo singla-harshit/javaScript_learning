@@ -19,4 +19,6 @@ map.set('IN','India')
 map.set('US','USA')
 map.set('IN','India')
 
-for(let key in map) console.log(key)
+for(let key in myObject){
+    console.log(key,myObject[key]);
+}

@@ -13,7 +13,6 @@ console.log(systemGuess);
 submit.addEventListener("click", function (e) {
   if (submit.classList.contains("newGame")) {
     newGame();
-    alert("bk")
   } 
   else {
     displayInfo(attempts, userGuess.value);

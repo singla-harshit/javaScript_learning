@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        button {
+            padding: 5px 10px;
+            width: 200px;
+            height: 30px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="start">Start The Magic</button>
+    <button id="stop">Stop the Shit !!</button>
+
+    <script>
+        const start = document.querySelector('#start');
+        const stop = document.querySelector('#stop');
+
+        const randomColor = () => {
+            const hex = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += hex[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        };
+
+        const changeBackgroundColor = () => {
+            const color = randomColor();
+            document.body.style.backgroundColor = color;
+        };
+
+        let intervalId;
+        const startChange = () => {
+            if (!intervalId) {
+                intervalId = setInterval(changeBackgroundColor, 1000);
+                console.log(`Interval started with ID: ${intervalId}`);
+            }
+        };
+
+        const stopChange = () => {
+            clearInterval(intervalId);
+            console.log(`Interval with ID: ${intervalId} stopped`);
+            intervalId = null;
+        };
+
+        start.addEventListener('click', startChange);
+        stop.addEventListener('click', stopChange);
+    </script>
+</body>
+</html>

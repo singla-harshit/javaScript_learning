@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Harshit Singla</h1>
+    <button>Stop Me if You can!!</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("Hello Mannn");
+    // },2000 )
+
+    const Harshit = ()=> {
+        console.log("Hii Harshit , Welcome Back");
+    }
+    const but= document.querySelector('button');
+
+    const stop = ()=>{
+        clearInterval(repeat)
+        console.log("You saved us 🙌🙌🙌  ");
+        
+    }
+    but.addEventListener('click',stop)
+
+
+    const repeat =  setInterval(Harshit,300);
+    // We can pass paramenters with setInterval as the third argument
+
+</script>
+</html>

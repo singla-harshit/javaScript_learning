@@ -1,12 +1,3 @@
-const buttons = document.querySelectorAll(".button");
-
-buttons.forEach((button) => {
-  button.addEventListener("click", function (color) {
-    const selector = color.target.id;
-    document.body.style.backgroundColor = selector;
-    button.style.borderColor = selector;
-  });
-});
 
 
 // const getID= document.getElementById('red')
@@ -49,8 +40,8 @@ div.style.backgroundColor = 'pink'
 // console.log(div.innerHTML);
 
 // Modifying Attributes and Classes
-// div.setAttribute('class','button')
-// div.setAttribute('id','pink ')
+div.setAttribute('class','button')
+div.setAttribute('id','pink ')
 // // Removing attributes
 // div.removeAttribute('id')
 
@@ -61,4 +52,13 @@ div.style.backgroundColor = 'pink'
 
 // Removing an element
 // console.log(div);
+const buttons = document.querySelectorAll(".button");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", function (color) {
+    const selector = color.target.id;
+    document.body.style.backgroundColor = selector;
+    button.style.borderColor = selector;
+  });
+});
 // div.remove()
